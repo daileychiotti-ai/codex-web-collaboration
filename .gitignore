@@ -1,0 +1,14 @@
+/本地配置/
+/运行/
+/备份/
+**/__pycache__/
+**/.pytest_cache/
+*.pyc
+*.sqlite3
+*.sqlite3-*
+*.db
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
