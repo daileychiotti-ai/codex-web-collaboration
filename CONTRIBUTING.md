@@ -8,7 +8,6 @@
 
 ```sh
 python3 -m unittest discover -s 测试 -p 'test_会话池.py' -v
-node --test 测试/等待网页结果.test.cjs
 ```
 
-Windows 可以将 python3 替换为已核对的 py -3。运行记录须区分离线测试、真实宿主会话与文件运输。没有测试的操作系统标为未验证。
+Windows 可以将 python3 替换为已核对的 py -3。若 Python 默认不是 UTF-8，先在当前 PowerShell 设置 `$env:PYTHONUTF8='1'`，使测试中的子进程输出与 UTF-8 解码一致；该设置仅作用于当前进程及子进程。运行记录须区分离线测试、真实宿主会话与文件运输。没有测试的操作系统标为未验证。
